@@ -1,0 +1,121 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: maroon;
+}
+
+.main-header::first-letter{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 5em;
+}
+
+.main-header {
+    font-size: 2em;
+    color: white;
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Paragraph styles */
+.intro-paragraph::selection{
+    color: #007bff;
+    background-color: green;
+}
+.intro-paragraph {
+    font-size: 1.2em;
+    color: white;
+    margin: 20px;
+    text-align: center;
+}
+
+/* Button styles */
+.cta-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    transition: color 0.3s, background-color 0.3s; /* Add transition for smooth effect */
+}
+
+/* Hover effect for the button */
+.cta-button:hover {
+    color: #007bff;
+    background-color: #fff;
+}
+
+/* Header pseudo-elements */
+.main-header::before{
+    content: "⭐";
+    font-size: 1.5em;
+    position: absolute;
+    top: 45%;
+    
+}
+.main-header::after {
+    content: "⭐";
+    font-size: 1.5em;
+    position: absolute;
+    top: 45%;
+    
+}
+
+.main-header::before {
+    left: 405px;
+}
+
+.main-header::after {
+    right: 400px;
+}
+
+/* Paragraph pseudo-elements */
+.intro-paragraph::before,
+.intro-paragraph::after {
+    content: '"';
+    color:black;
+    font-size: 2em;
+    
+    
+    
+}
+
+.intro-paragraph::before {
+    left: 350px;
+}
+
+.intro-paragraph::after {
+    right: 350px;
+}
+
+/* Button pseudo-elements */
+.cta-button::before{
+    content: "👉";
+    font-size: 1.5em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.cta-button::after {
+    content: "👈";
+    font-size: 1.5em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.cta-button::before {
+    left: -30px;
+}
+
+.cta-button::after {
+    right: -30px;
+}
